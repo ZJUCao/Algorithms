@@ -1,3 +1,15 @@
+/**
+ * @file    BinarySearch.cpp
+ * @brief   Binary search for an element x in a sorted array A[0..n-1].
+ *
+ * Binary search repeatedly divides the search interval in half.
+ * It works for sorted arrays.
+ *
+ * Time complexity: O(log n)
+ *
+ * @author  Troy
+ * @date    2026-02-14
+ */
 #include <iostream>
 
 using namespace std;
