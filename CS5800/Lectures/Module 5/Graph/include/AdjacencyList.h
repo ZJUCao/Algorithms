@@ -27,6 +27,8 @@ private:
     int numVertices;         // number of vertices
     vector<vector<int>> adj; // adjacency list
 
+    void dfsUtil(int v, vector<bool>& visited) const;
+
 public:
     /**
      * @brief   Constructor for the AdjacencyList class.
@@ -55,6 +57,20 @@ public:
      * @brief   Print the adjacency list.
      */
     void print() const;
+
+    /**
+     * @brief   Breadth-First Search (BFS) algorithm for graph traversal.
+     *
+     * @param[in]   start   The starting vertex for BFS.
+     */
+    void BFS(int start) const;
+
+    /**
+     * @brief   Depth-First Search (DFS) algorithm for graph traversal.
+     *
+     * @param[in]   start   The starting vertex for DFS.
+     */
+    void DFS(int start) const;
 };
 
 #endif
