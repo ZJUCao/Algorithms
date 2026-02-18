@@ -34,9 +34,13 @@ int main()
 
     cout << "=== Adjacency Matrix ===" << endl;
     m.print();
+    m.BFS(0);
+    m.DFS(0);
 
     cout << "\n=== Adjacency List ===" << endl;
     l.print();
+    l.BFS(0);
+    l.DFS(0);
 
     return 0;
 }

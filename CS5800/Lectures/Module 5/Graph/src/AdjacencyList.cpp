@@ -10,6 +10,7 @@
  */
 #include <iostream>
 #include <algorithm>
+#include <queue>
 #include "AdjacencyList.h"
 
 using namespace std;
@@ -43,4 +44,56 @@ void AdjacencyList::print() const
         }
         cout << endl;
     }
+}
+
+void AdjacencyList::BFS(int start) const
+{
+    vector<bool> visited(numVertices, false);
+    queue<int> q;
+
+    visited[start] = true;
+    q.push(start);
+
+    cout << "BFS: ";
+
+    while (!q.empty())
+    {
+        int u = q.front();
+        q.pop();
+        cout << u << " ";
+
+        for (int v : adj[u])
+        {
+            if (!visited[v])
+            {
+                visited[v] = true;
+                q.push(v);
+            }
+        }
+    }
+
+    cout << endl;
+}
+
+void AdjacencyList::dfsUtil(int v, std::vector<bool>& visited) const
+{
+    visited[v] = true;
+    cout << v << " ";
+
+    for (int neighbor : adj[v])
+    {
+        if (!visited[neighbor])
+        {
+            dfsUtil(neighbor, visited);
+        }
+    }
+}
+
+void AdjacencyList::DFS(int start) const
+{
+    vector<bool> visited(numVertices, false);
+
+    cout << "DFS: ";
+    dfsUtil(start, visited);
+    cout << endl;
 }
