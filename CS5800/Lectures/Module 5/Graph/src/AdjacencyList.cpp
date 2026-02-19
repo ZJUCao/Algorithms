@@ -75,7 +75,7 @@ void AdjacencyList::BFS(int start) const
     cout << endl;
 }
 
-void AdjacencyList::dfsUtil(int v, std::vector<bool>& visited) const
+void AdjacencyList::dfsUtil(int v, std::vector<bool> &visited) const
 {
     visited[v] = true;
     cout << v << " ";

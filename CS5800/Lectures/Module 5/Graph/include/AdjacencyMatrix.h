@@ -29,7 +29,7 @@ private:
     int numVertices;            // number of vertices
     vector<vector<int>> matrix; // adjacency matrix
 
-    void dfsUtil(int v, vector<bool>& visited) const;
+    void dfsUtil(int v, vector<bool> &visited) const;
 
 public:
     /**
