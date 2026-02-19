@@ -27,7 +27,7 @@ private:
     int numVertices;         // number of vertices
     vector<vector<int>> adj; // adjacency list
 
-    void dfsUtil(int v, vector<bool>& visited) const;
+    void dfsUtil(int v, vector<bool> &visited) const;
 
 public:
     /**

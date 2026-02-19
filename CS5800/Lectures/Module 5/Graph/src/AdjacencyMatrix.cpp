@@ -78,7 +78,7 @@ void AdjacencyMatrix::BFS(int start) const
     cout << endl;
 }
 
-void AdjacencyMatrix::dfsUtil(int v, vector<bool>& visited) const
+void AdjacencyMatrix::dfsUtil(int v, vector<bool> &visited) const
 {
     visited[v] = true;
     cout << v << " ";
