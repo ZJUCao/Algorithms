@@ -1,6 +1,6 @@
 /**
- * @file main.cpp
- * @brief Main function
+ * @file ChangeMaking.cpp
+ * @brief Change making problem
  *
  * @author Troy
  * @date 2026-02-19
